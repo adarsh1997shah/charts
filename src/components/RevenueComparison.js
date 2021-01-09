@@ -7,7 +7,7 @@ function RevenueComparison({ options }) {
     useEffect(() => {
         const chartInit = echarts.init(chart.current);
         chartInit.setOption(options);
-    });
+    }, []);
 
     return <div ref={chart} style={{ width: '100%', height: '100%' }} />;
 }
